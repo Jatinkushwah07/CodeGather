@@ -1,0 +1,550 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta content="noindex, nofollow" name="robots">
+<link href="css/form1.css" rel="stylesheet">
+<title>Ureqa</title>
+<link rel="shortcut icon" href="Images/favicon.ico"/>
+</head>
+<style type="text/css">
+	h1{margin:0;}
+	ul{margin:0;}
+	#epgs1
+		{float:left;
+		position:relative;
+		left:-10px;
+		font-size:17px;}
+	.topnav {
+		background-color: #971515;
+		overflow: hidden;
+		margin-left:50%;
+		position:fixed;
+		width:50%;
+		z-index:500;
+		height:70px;
+		padding-top:11px;
+		padding-left:10px;
+	}
+	.topnav a {
+		float: left;
+		color:white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+	}
+	.topnav a:hover {
+		background-color: #d31531;
+		color: black;
+		cursor:pointer;
+	}
+	#contact1
+		{
+			padding-left:50px;
+			float:left;
+			height:500px;
+			width:50%;
+			background-image:url("Images/lap1.jpeg");
+			background-size:cover;
+			font-weight:bold;
+		}
+	#contact2
+		{
+			float:right;
+			padding-left:80px;
+			height:500px;
+			width:50%;
+			background-image:url("Images/lap2.jpeg");
+			background-size:cover;
+			
+			color:white;
+			font-weight:bold;
+
+		
+		}
+    #back1
+		{height:550px;
+		background-image:url("Images/back3.png");
+		background-size:cover;
+		}
+	#first{
+		width:350px;
+		float:left;
+		height:auto;
+		opacity:.9;
+		padding:50px;
+		background-color:#EEE;
+		color:#333;
+		border:2px solid #C2D6FF;
+		border-radius:40px 0 40px 0
+		}
+	input#name{
+		background-repeat:no-repeat;
+		background-position:6px;
+		border:1px solid #DADADA;
+		margin-top:10px;
+		margin-bottom:10px;
+		padding-left:35px;
+		width:250px;
+		height:30px;
+		font-size:14px;
+		box-shadow:0 0 10px;
+	}
+	input#email{
+		
+		background-repeat:no-repeat;
+		background-position:6px;
+		border:1px solid #DADADA;
+		margin-top:10px;
+		margin-bottom:10px;
+		padding-left:35px;
+		width:250px;
+		height:30px;
+		font-size:14px;
+		box-shadow:0 0 10px;
+	}
+	input#phone{
+			
+			background-repeat:no-repeat;
+			background-position:6px;
+			border:1px solid #DADADA;
+			margin-top:10px;
+			margin-bottom:10px;
+			padding-left:35px;
+			width:250px;
+			height:30px;
+			font-size:14px;
+			box-shadow:0 0 10px;
+	}
+	
+	
+	textarea#message{
+		background-repeat:no-repeat;
+		background-position:6px;
+		border:1px solid #DADADA;
+		margin-top:10px;
+		margin-bottom:10px;
+		padding-left:35px;
+		width:250px;
+		height:30px;
+		font-size:14px;
+		box-shadow:0 0 10px;
+	}
+	input#submit {
+		background-color:#cc7a66;
+		border-radius:5px;
+		border:none;
+		
+		padding:10px 25px;
+		color:#FFF;
+		text-shadow:1px 1px 1px #949494;
+		margin-left:70px;
+		margin-top:15px;
+	}
+	input#submit:hover
+		{
+		background-color:#FF9980
+		}
+	#services1
+	{
+		position:relative;
+		padding:15px;
+		margin-right:40px;
+		width:500px;
+		float:right;
+		background-color:#AF2929;
+		color:white;
+		text-align:justify;
+		padding-right:15px;
+		border-radius:30px;
+	}
+	#services2
+	{
+		position:relative;
+		margin-right:110px;
+		float:right;
+		text-align:justify;
+		border-radius:30px;
+		width:350px;
+		padding:15px;
+		background-color:#AF2929;
+		color:white;
+		font-size:17px;
+	}
+	
+	#about
+		{height:600px;
+		background-size:cover;
+		background-image:url(Images/untitled.gif);
+		font-size:17px;
+		text-align:right;
+		padding-bottom: 50px;
+		padding-left:350px;
+		padding-right:-100px;
+		}
+	#services
+		{height:690px;
+		text-align:right;
+		background-image:url("Images/back5.png");
+		background-size:cover;
+		}
+	#text1
+		{padding-left:100px;
+		padding-right:100px;
+		padding-top:50px;}
+	#features
+		{text-align:left;
+		background-image:url("Images/back6.png");
+		background-size:cover;
+		height:520px;
+		font-size:17px;}
+	.righttext
+		{position: absolute;
+		top: 8px;
+		font-size:15px;
+		z-index:100;
+		right: 16px;
+		color:black;
+		text-align:center-right;}
+	.pic
+		{font-family:"Arial";
+		color:white;
+		z-index:100;
+		position:relative;
+		top: 0px;
+		left: 0px;
+		
+		}
+	.img1
+		{position:relative;
+		top: 0px;
+		left: 0px;
+		width:100%;}
+	.img3
+		{position:relative;
+		left: 70px;
+		top:50px;}
+	.img4
+		{position:relative;
+		left: 150px;
+		padding-top:10px;}
+	* {
+		box-sizing: border-box;
+	}
+	.column
+		{float:left;
+		width:14%;
+		color:white;
+		z-index:500;
+		position:fixed;
+		padding:10px;}
+		
+	.left{width:50%;}
+	
+	.right{width:10%;}
+	#container
+		{margin-top:-10px;
+		margin-left:-10px;
+		position:absolute;
+		font-family:"helvetica";}
+	#head
+		{height:70px;
+		position:fixed;
+		z-index:500;
+		color:white;}
+	#contents {
+		padding: 16px;
+		background-image:url("Images/back4.png");
+		background-size:cover;
+		height:580px;
+		width:100%;
+		}
+		
+	
+	.logo
+		{position:absolute;
+		top:50%;
+		z-index:100;
+		left:40%;}
+	.content
+		{
+		background-image:url("Images/back.png");
+		background-size:cover;
+		z-index:100;
+		height:700px;
+		width:100%} 
+	#foot
+		{margin:0px;
+		width:100%; height: 50px; 
+		background-color:#971515;
+		color:white;
+		padding-top:2px;
+		text-align:center;
+		font-family:"times new roman";}
+	table
+	{
+		background-color:#971515;
+		border:2px;
+		width:100%;
+		color:white;
+		height:50px;
+	}
+	#back2Top {
+		width: 40px;
+		line-height: 40px;
+		overflow: hidden;
+		z-index: 999;
+		display: none;
+		border-radius:40px;
+		cursor: pointer;
+		-moz-transform: rotate(270deg);
+		-webkit-transform: rotate(270deg);
+		-o-transform: rotate(270deg);
+		-ms-transform: rotate(270deg);
+		transform: rotate(270deg);
+		position: fixed;
+		bottom: 50px;
+		margin-right:20px;
+		right:0;
+		background-color: #DDD;
+		color: #555;
+		text-align: center;
+		font-size: 30px;
+		text-decoration: none;
+	}
+	#back2Top:hover {
+		background-color: #DDF;
+		color: #000;
+	}
+	body{
+		margin:0px;
+		padding:0px;
+	}
+	#back{
+		background-color:white;
+		
+	}
+	form.search button{
+		background-color:#971515;
+		border:0;
+		float:right;
+		margin:0;
+		margin-right:19px;
+		height:50px;
+		width:50px;
+		cursor:pointer;
+	}
+	.box{
+		float:left;
+		margin-left:10px;
+		margin-top:14px;
+	}
+	.search a:hover {
+		background-color: #971515;
+	}
+</style>
+<script type="text/javascript">
+	function scTo() {	
+		console.log(event.target.attributes.url.value);
+		document.querySelector(event.target.attributes.url.value).scrollIntoView({ 
+		  behavior: 'smooth' 
+		});
+		event.stopPropagation();
+		return false;
+	}	
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+</script>
+<body>
+<div class="head" id="home">
+				 <div class="column left" style="background-color:#971515;">
+					<p><em>QUALITY, ACCURATE AND COMPREHENSIVE METADATA AND EPG SERVICES</p></em>
+				 </div>
+				<div class="topnav">
+						<a class="active" onclick="scTo()" url="#home">Home</a>
+						<a url="#services" onclick="scTo()">Services</a>
+						<a url="#features" onclick="scTo()">Features</a>
+						<a url="#about" onclick="scTo()">About</a>
+						<a url="#contact1" onclick="scTo()">Contact</a>
+					
+					<form action="Submit.php" method="post" class="search" >
+					<input type="text" class="box" name="search" placeholder="Search.." width="6" height="20" />
+					<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+			
+</div>
+<div class="content">
+	<img class="logo" src="Images/ureqa 2.png"/>
+</div>
+<div id="foot">
+	<h3>Ureqa connects TV data providing quality, accurate and comprehensive metadata and EPG services to platforms worldwide</h3>
+</div>
+<div id="contents">
+			<div class="pic">
+				<div class="righttext">
+				<br>
+				<img class="img2" src="Images/bb1.png"/>
+					<h1 style="color:#B31616;"><br>Breaking Bad<br></h1>
+					<p>18|49 min|Crime,Drama,Thriller|TV Series(2008-2013)<br/>A high school chemistry teacher diagnosed with inoperable lung cancer turns to <br>manufacturing and selling methamphetamine in order to secure<br> his family's financial future.
+					<br/><br/>creator: Vince Gilligan<br/>Stars:Bryan Cranston, Aaron Paul,Anna Gunn.<br/>
+				</div>
+			</div>
+</div>
+
+<div id="back1">
+			<br><br><br>
+			<div id="epgs1">
+				<h2 style="color:#B31616; text-align:right;">
+				<br><br><br><br><big>&nbsp;&nbsp;&nbsp;Smart Info For Smart Viewers</big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</h2>
+				<p style="text-align:right color:black ";>
+				<ul>
+				<li>Thousands of TV programmes, catchup
+				TV, VOD, Internet TV, etc<br> – with
+				such a huge range of content, EPG
+				holds an extremely<br> important role in
+				digital living rooms</li>
+				<li>Currently serving 100+ platforms like
+				Airtel, YuppTV, DEN Network, etc.</li>
+				<li>Rich metadata including synopsis,
+				movie star-cast, poster images,<br>
+				channel images, etc</li>
+				</ul>
+				</p>
+			</div>
+</div>
+	
+<div id="services">
+		<br><br><h1 style="color:#B31616;">SERVICES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>		
+		<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+			<br><br>
+			<div id="services1">
+			<img src="Images/WebsiteIcons2-08.gif" height="80px" style="margin-left:43%">
+			<p style="margin:0px;">First and foremost, channel listings need to appear on the platforms themselves.
+			We have a lot of experience in delivering schedules to operators around the
+			world and work closely with operators in the UK as well as those further afield including DStv,
+			Canal Digital and OSN. As well as sending to traditional DTT, cable and
+			DTH operators, it also sends to IPTV services such as Connect
+			TV and TV Player. Each broadcast platform we work with is set up in
+			it with the required attributes and export definitions to meet the
+			individual platform's requirements</p>
+		</div>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>		
+		<br>
+		<div id="services2">
+		<img src="Images/epg-logo-300x178.png" width="60px" style="margin-left:40%">
+			<p style="margin:0px;">Provides metadata sample fields like movie/Show name, genres ,star cast, detailed synopsis , reviews etc.
+			Metadata delivery via email, API,
+			FTP with automated failure
+			Notifications
+			Easy search with multiple tags
+			Recommendation of movies with
+			similar star cast, genre, ratings,
+			etc </p>
+		</div>
+</div>
+<div id="features">
+	<br><h2 style="color:#B31616;"><big>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FEATURES</big></h2>
+		<p style="padding-left:10px;">
+		Rich metadata including synopsis,
+		movie star-cast, poster images,
+		channel<br> images, etc
+		EPG delivery via email, API, FTP
+		with automated failure<br> notifications
+		Multiple formats support – JSON,
+		XML, TXT, SGI, SDF<br><br>
+		EPG available in 5 languages –
+		English, Hindi, Tamil, Telugu and
+		Marathi.<br>
+		Series Linkage – EpisodeID
+		generation with managed repeats<br><br>
+		Total Control – Make last moment
+		programme schedule changes in
+		<br>one place and publish to multiple
+		platforms.<br><br>Programme Merge Management –Show timings spanning<br> two dates
+		generates one EPG entry
+		</p>
+</div>
+<div id="about">
+		<div id="text1">
+			<br>
+			<h2 style="color:#B31616;"><big>
+			ABOUT US&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</big></h2>
+			<p>
+			Ureqa, an NDTV venture, is one of India’s leading provider of video metadata services including rich multimedia information, ratings, TV channel line-ups, programming and scheduling data <br>
+			covering multiplelanguages(English, Hindi, Tamil, Telugu, Marathi, etc)<br>
+			<br>EPG information from Ureqagives OTT platforms, Smart TVs and online sites a comprehensive information backend to improve their offering to their users increasing engagement<br>
+			and time spent on their platforms<br>
+			<br>Currently serving 100+ platforms like
+			Airtel, YuppTV, DEN Network, etc.
+			Providing EPG services to international
+			clients in SriLanka, Maldives, Australia
+			and NZ<br><br>
+			EPGs of 1000+ channels including Pay
+			Per View (PPV) Channels<br><br>
+			Providing 24x7 call support to all our
+			clients
+			</p>
+		</div>
+</div>
+<div id="contact1">
+			<h1 style="color:#971515;">
+			<br>CONTACT US
+			</h1>
+				<p>Hemant Kumar Sajnani <br>Vice President -Software Services <br>Email: hemant@ndtv.com <br>Ph: +91 95600 50228<br><br><br>
+					Tarun Sinha<br> Vice President -IT Solutions & New Initiatives <br>Email: tarun@ndtv.com<br> Ph: +91 96500 91007
+				</p><br><br><br><br><a href="https://play.google.com/store/apps/details?id=com.ndtv.epg&hl=en_IN"><img src="Images/download.jfif" height="30" wider="30"/></a>
+					<img src="Images/gmail.jpeg" height="30" width="30"/> <img src="Images/fb.jfif" height="30" width="30"/>
+</div>
+<div id="contact2">
+				<br><br>
+				
+				<div id="first">
+					<form action="process.php" method="post" >
+					<input id="name" name="name" placeholder="Full Name" type="text"><br>
+					<input id="phone" name="phone" placeholder="Contact Number" type="text"><br>
+					<input id="email" name="email" placeholder="Email" type="text"><br>
+					<textarea id="message" name="message" placeholder="Message" style="height:100px; width:250px; padding-left:10px; resize:none"></textarea><br>
+					<input id="submit" type="submit" value="Submit">
+				</form>	
+				
+			</div>
+</div>
+<table>
+		<tr>
+		<td>Ureqa features</td>
+		<td>EPG Scheduling & Distribution</td>
+		<td>VOD,DTO & Catch-up</td>
+		<td>EPG Aggregation</td>
+		<td>Translation</td>
+		<td>Metadata</td>
+		<td>Images</td>
+		<td>TV Channel Database</td>
+		</tr>
+</table>
+
+<a id="back2Top" title="Back to top" href="#">&#10148;</a>
+</body>
+</html>
